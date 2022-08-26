@@ -53,6 +53,6 @@ describe("Auth Hook", () => {
 
     await act(async () => result.current.signInWithGoogle());
 
-    expect(result.current.user).not.toHaveProperty("id");
+    expect(result.current.user).not.toHaveProperty("any_id");
   });
 });
